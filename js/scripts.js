@@ -104,7 +104,7 @@
 	});
 
 	$(document).on('scroll', function () {
-		if ($(document).scrollTop() >= $('#showcase').offset().top && $(document).scrollTop() < $('#services-list').offset().top) {
+		if ($(document).scrollTop() >= $('#showcase').offset().top && $(document).scrollTop() < $('#timeline').offset().top) {
 			$('#social').removeClass('social').addClass('active');
 		}
 		else {
@@ -112,6 +112,8 @@
 		}
 	});
 
+
+	// history code
 	var items = document.querySelectorAll(".timeline li");
 
 	function isElementInViewport(el) {
