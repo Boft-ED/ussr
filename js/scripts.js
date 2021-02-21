@@ -93,26 +93,6 @@
 	});
 
 
-	// Active and OffActive
-	$(document).on('scroll', function () {
-		if ($(document).scrollTop() >= $('#slider').offset().top && $(document).scrollTop() < $('#showcase').offset().top) {
-			$('#social').removeClass('active').addClass('social');
-		}
-		else {
-			$('#social').removeClass('social').addClass('active');
-		}
-	});
-
-	$(document).on('scroll', function () {
-		if ($(document).scrollTop() >= $('#showcase').offset().top && $(document).scrollTop() < $('#timeline').offset().top) {
-			$('#social').removeClass('social').addClass('active');
-		}
-		else {
-			$('#social').removeClass('active').addClass('social');
-		}
-	});
-
-
 	// history code
 	var items = document.querySelectorAll(".timeline li");
 

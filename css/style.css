@@ -1475,8 +1475,6 @@ footer {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 40%;
-	background: rgba(255, 255, 255, 0.1);
 	z-index: 1;
 	transform: skewY(-5deg) scale(1.5);
 }
@@ -1485,18 +1483,40 @@ footer {
 	transform: scale(1.1);
 }
 
-.block-contact__social h3 {
+.block-contact__content h3 {
 	font-family: "Lato", sans-serif;
 	text-transform: uppercase;
 	color: #000;
-	font-size: 26px;
+	font-size: 30px;
 	font-weight: 500;
 	padding-top: 30px;
 	padding-bottom: 20px;
 }
 
-.block-contact__social a {
+.block-contact__content a {
+	margin-bottom: 30px;
+	display: block;
+	font-size: 24px;
+	color: #f59841;
+	font-weight: 600;
+}
+
+.block-contact__content a:nth-child(3) {
 	color: #000;
+}
+
+.block-contact__content a:nth-child(4) {
+	color: #4781c1;
+}
+
+.block-contact__content a:nth-child(8) {
+	color: #000;
+}
+
+.block-contact__content img {
+	width: 100px;
+	height: 80px;
+	padding-right: 20px;
 }
 
 /* CONTACTS */
@@ -1601,7 +1621,7 @@ footer .sub-footer ul li a {
 	font-weight: 700;
 	color: #fff;
 }
-.active,
+
 .social {
 	z-index: 9999;
 	width: 200px;
@@ -1611,15 +1631,10 @@ footer .sub-footer ul li a {
 	perspective: 1000px;
 }
 
-.active li a {
-	background-color: #fff;
-}
-
 .social li a {
 	background: #af1f1c;
 }
 
-.active li a,
 .social li a {
 	display: block;
 	height: 40px;
@@ -1633,32 +1648,30 @@ footer .sub-footer ul li a {
 	transition: background 0.5s ease 0.3ms;
 }
 
-.active li:first-child a:hover,
 .social li:first-child a:hover {
 	background: #3b5998;
 }
-.active li:nth-child(2) a:hover,
+
 .social li:nth-child(2) a:hover {
 	background: #00acee;
 }
-.active li:nth-child(3) a:hover,
+
 .social li:nth-child(3) a:hover {
 	background: #ea4c89;
 }
-.active li:nth-child(4) a:hover,
+
 .social li:nth-child(4) a:hover {
 	background: #dd4b39;
 }
-.active li:first-child a,
+
 .social li:first-child a {
 	border-radius: 0 5px 0 0;
 }
-.active li:last-child a,
+
 .social li:last-child a {
 	border-radius: 0 0 5px 0;
 }
 
-.active li a span,
 .social li a span {
 	width: 100px;
 	float: left;
@@ -1675,7 +1688,6 @@ footer .sub-footer ul li a {
 	transition: all 0.5s ease 0.3ms;
 }
 
-.active li span:after,
 .social li span:after {
 	content: "";
 	display: block;
@@ -1688,15 +1700,10 @@ footer .sub-footer ul li a {
 	border-right: 10px solid #222;
 }
 
-.active li a:hover span,
 .social li a:hover span {
 	visibility: visible;
 	opacity: 1;
 	transform: rotateY(0);
-}
-
-.active li a:before {
-	color: #000;
 }
 
 @media only screen and (max-width: 989px), only screen and (max-device-width: 989px) {
