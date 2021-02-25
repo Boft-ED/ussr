@@ -1319,6 +1319,14 @@ footer {
 	color: #000;
 }
 
+.timeline h3 {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: "Lato", sans-serif;
+	color: #000;
+}
+
 .timeline ul li {
 	list-style-type: none;
 	position: relative;
@@ -1349,7 +1357,12 @@ footer {
 	display: flex;
 	align-items: center;
 }
+
+.timeline ul li div a {
+	color: #000;
+}
 .timeline ul li div time {
+	color: #000;
 	position: absolute;
 	background: #f5af19;
 	width: 80px;
@@ -1524,7 +1537,7 @@ footer {
 }
 
 .social-links {
-	margin-top: 80px;
+	margin-top: 0px;
 }
 
 .social-links a {
@@ -1665,10 +1678,12 @@ footer .sub-footer ul li a {
 	position: fixed;
 	margin-top: 30px;
 	perspective: 1000px;
+	
 }
 
 .social li a {
 	background: #af1f1c;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .social li a {
@@ -1685,15 +1700,15 @@ footer .sub-footer ul li a {
 }
 
 .social li:first-child a:hover {
-	background: #3b5998;
+	background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 
 .social li:nth-child(2) a:hover {
-	background: #00acee;
+	background: #43d854;
 }
 
 .social li:nth-child(3) a:hover {
-	background: #ea4c89;
+	background: #597da3;
 }
 
 .social li:nth-child(4) a:hover {
