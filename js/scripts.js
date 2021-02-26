@@ -118,8 +118,13 @@
 		}
 	}
 
+
 	window.addEventListener("load", callbackFunc);
 	window.addEventListener("scroll", callbackFunc);
 
+
+	var delay_popup = 200;
+	var msg_pop = document.getElementById('msg_pop');
+	setTimeout("document.getElementById('msg_pop').style.display='block';document.getElementById('msg_pop').className += 'fadeIn';", delay_popup);
 
 })(jQuery);
