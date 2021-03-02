@@ -31,7 +31,7 @@ body {
 body,
 html {
 	height: 100%;
-	scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 }
 
 /* LINKS */
@@ -433,6 +433,10 @@ button:focus {
 	width: 100%;
 	float: left;
 	text-align: center;
+}
+
+h3.more {
+	color: #fff;
 }
 
 @media (min-width: 1220px) {
@@ -1705,7 +1709,16 @@ footer .sub-footer ul li a {
 		width: 300px;
 	}
 
+	.navbar-default .logo {
+		height: 40px;
+		margin: 20px 0;
+	}
+
 	.slider h1, .slider h2 {
 		font-size: 25px;
+	}
+
+	.hamburger-menu {
+		margin: 15px 0;
 	}
 }
