@@ -1704,4 +1704,8 @@ footer .sub-footer ul li a {
 	.block-contact__social {
 		width: 300px;
 	}
+
+	.slider h1, .slider h2 {
+		font-size: 25px;
+	}
 }
