@@ -620,7 +620,7 @@ button:focus {
 	width: 30px;
 	height: 64px;
 	float: right;
-	margin: 10px 0;
+	margin: 22px 0;
 	cursor: pointer;
 	overflow: hidden;
 	position: relative;
@@ -818,6 +818,7 @@ button:focus {
 	height: 100%;
 	float: left;
 }
+.slider h1,
 .slider h2 {
 	margin: 0 auto;
 	font-size: 100px;
@@ -1062,7 +1063,7 @@ button:focus {
 
 	.news-card .meta {
 		flex-basis: 40%;
-		height: 300px;
+		height: auto;
 	}
 
 	.news-card .description {
@@ -1115,7 +1116,7 @@ button:focus {
 	padding: 100px 0;
 }
 
-.timeline h2 {
+.history h2 {
 	font-family: "Lato", sans-serif;
 	color: #000;
 }
@@ -1189,7 +1190,7 @@ button:focus {
 	margin-right: 10px;
 }
 .timeline ul li:nth-of-type(odd) > div {
-	left: 45px;
+	left: 20px;
 }
 .timeline ul li:nth-of-type(even) > div {
 	left: -439px;
@@ -1241,7 +1242,7 @@ button:focus {
 	}
 }
 
-.timeline hr {
+.history hr {
 	border: none; /* Убираем границу для браузера Firefox */
 	color: #af1f1c; /* Цвет линии для остальных браузеров */
 	background-color: #af1f1c; /* Цвет линии для браузера Firefox и Opera */
@@ -1557,55 +1558,76 @@ footer .sub-footer ul li a {
 }
 
 
+@media (max-width: 1290px) {
+	.timeline ul li div {
+		width: 400px;
+	}
+	.timeline ul li:nth-of-type(even) > div {
+		left: -415px;
+	}
+}
+
 @media (max-width: 1200px) {
-	
-}
+	.timeline ul li div {
+		width: 380px;
+	}
+	.timeline ul li:nth-of-type(even) > div {
+		left: -392px;
+	}
+	.slider h1,
+	.slider h2 {
+		font-size: 90px;    letter-spacing: 10px;
+	}
 
+	.showcase h2 {
+		font-size: 80px;
+	}
 
-@media only screen and (max-width: 989px), only screen and (max-device-width: 989px) {
-	.navigation {
-		background: url(../images/nav-bg-image.jpg) no-repeat;
-		background-size: cover;
+	.title-box h2 {
+		font-size: 80px;
 	}
-	.showcase .portfolio-masonry li {
-		width: 50% !important;
-		padding: 10px;
+
+	.history h2 {
+		margin-top: 50px;
 	}
-	.history {
-		text-align: center;
+
+	.block-contact__social:before {
+		height: 520px;
 	}
-	.history h4:after {
-		left: 50%;
-		margin-left: -25px;
-	}
-	.history ul {
+
+	.block-contact__map {
 		margin-top: 0;
-		margin-bottom: 40px;
 	}
-	.features-list ul li {
-		font-size: 12px;
-	}
-	.history ul li:before {
-		display: none;
-	}
-	.wave-awards .text-right {
-		text-align: left !important;
-	}
-	.contact-info .text-right {
-		text-align: left !important;
-	}
-	.contact-info h3:after {
-		left: 0;
-	}
-	.contact-info h4 {
-		margin-top: 40px;
-	}
-	.contact-info h4:after {
-		left: 0;
+
+	.map iframe {
+		height: 465px;
 	}
 }
 
-@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+@media (max-width: 1140px) {
+	.timeline {
+		width: auto;
+	}
+	.timeline ul li:nth-of-type(even) > div {
+		left: 20px;
+	}
+}
+
+
+@media (max-width: 989px){
+	.slider h1, .slider h2 {
+		font-size: 70px;
+		letter-spacing: 13px;
+	}
+	.title-box h2,
+	.showcase h2 {
+		font-size: 60px;
+	}
+}
+
+
+
+@media (max-width: 767px){
 	.navigation nav ul li {
 		margin: 7px 0;
 	}
@@ -1613,40 +1635,73 @@ footer .sub-footer ul li a {
 		font-size: 22px;
 	}
 	.slider h2 {
-		font-size: 40px;
+		font-size: 50px;
 		letter-spacing: 10px;
-	}
-	.int-header p {
-		padding: 0 10%;
 	}
 	.showcase h2 {
 		font-size: 60px;
-	}
-	.showcase .portfolio-masonry li {
-		width: 100% !important;
-	}
-	.quote .columms {
-		width: 100%;
-	}
-	.features-list ul {
-		margin-bottom: 40px;
-	}
-	.features-list ul li {
-		font-size: 14px;
-	}
-	.career .col-md-4 {
-		margin-bottom: 80px;
 	}
 	footer .sub-footer ul {
 		float: left;
 		margin-top: 20px;
 	}
+
+	.hamburger-menu {
+		margin: 25px 0;
+	}
+	.title-box h2,
+	.showcase h2 {
+		font-size: 50px;
+	}
+	.timeline ul li:nth-of-type(even) > div,
+	.timeline ul li:nth-of-type(odd) > div {
+		left: 45px;
+	}
+
+	.timeline ul li div {
+		padding: 10px;
+
+	}
 }
 
-@media (max-width: 576px) {
+@media (max-width: 620px) {
+	.slider h1, .slider h2 {
+		font-size: 50px;
+	}
+	.timeline ul li:nth-of-type(even) > div, .timeline ul li:nth-of-type(odd) > div {
+		left: 35px;
+	}
 
+	.timeline ul li div {
+		width: 310px;
+	}
+
+	.timeline ul li div div {
+		height:150px;
+	}
 }
 
-@media (max-width: 440px) {
+@media (max-width: 586px) {
+	.slider h1, .slider h2 {
+		font-size: 40px;
+	}
+	.title-box h2, .showcase h2 {
+		font-size: 40px;
+	}
+}
 
+@media (max-width: 480px) {
+	.timeline ul li {
+		margin-left: 0px;
+	}
+	.timeline ul li:nth-of-type(odd) div {
+		transform: translate3d(0px, 0px, 0) rotate(0deg);
+	}
+	.timeline ul li:nth-of-type(even) div {
+		transform: translate3d(0px, 0px, 0) rotate(0deg);
+	}
+
+	.block-contact__social {
+		width: 300px;
+	}
 }
