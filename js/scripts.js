@@ -5,11 +5,11 @@
 
 
 		// Scroll down opacity
-		var divs = $('.slider-inner');
-		$(window).on('scroll', function () {
-			var st = $(this).scrollTop();
-			divs.css({ 'opacity': (1 - st / 700) });
-		});
+		// var divs = $('.slider-inner');
+		// $(window).on('scroll', function () {
+		// 	var st = $(this).scrollTop();
+		// 	divs.css({ 'opacity': (1 - st / 700) });
+		// });
 
 
 
