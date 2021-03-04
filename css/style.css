@@ -1800,4 +1800,8 @@ footer .sub-footer ul li a {
 	.block-contact__map {
 		margin: 25 auto;
 	}
+
+	.block-contact__social {
+		width: 260px;
+	}
 }
