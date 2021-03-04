@@ -1792,4 +1792,12 @@ footer .sub-footer ul li a {
 	.social {
 		margin-top: 80px;
 	}
+	.block-contact__map,
+	.block-contact__social:before {
+		width: 100%;
+	}
+
+	.block-contact__map {
+		margin: 25 auto;
+	}
 }
