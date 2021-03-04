@@ -729,6 +729,9 @@ h3.more {
 	position: absolute;
 	left: 0;
 	top: 0;
+	opacity: 0.1;
+    z-index: 1;
+    overflow: hidden;
 }
 .navigation nav {
 	display: inline-block;
@@ -1359,6 +1362,12 @@ h3.more {
 	border-radius: 100%;
 }
 
+.social-links a:hover {
+	background-color: #fff;
+	color: #af1f1c;
+	transition: 0.3;
+}
+
 .block-contact__map {
 	margin-top: 50px;
 }
@@ -1564,6 +1573,13 @@ footer .sub-footer ul li a {
 	visibility: visible;
 	opacity: 1;
 	transform: rotateY(0);
+}
+
+
+@media (min-width: 1440px) {
+	.video-bg video {
+		width: 100%;
+	}
 }
 
 
