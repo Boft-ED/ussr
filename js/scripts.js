@@ -129,8 +129,5 @@
 	var msg_pop = document.getElementById('msg_pop');
 	setTimeout("document.getElementById('msg_pop').style.display='block';document.getElementById('msg_pop').className += 'fadeIn';", delay_popup);
 
-	window.onbeforeunload = function () {
-		window.scrollTo(0, 0);
-	}
 
 })(jQuery);
