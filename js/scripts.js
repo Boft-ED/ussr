@@ -4,6 +4,8 @@
 		"use strict";
 
 
+		window.scrollTo(0, 0);
+
 		// Scroll down opacity
 		var divs = $('.slider-inner');
 		$(window).on('scroll', function () {
