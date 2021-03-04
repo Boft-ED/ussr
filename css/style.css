@@ -161,6 +161,8 @@ textarea {
 	vertical-align: middle;
 }
 
+
+
 /* TRANSITION OVERLAY */
 .transition-overlay {
 	width: 100%;
@@ -1724,5 +1726,10 @@ footer .sub-footer ul li a {
 
 	.hamburger-menu {
 		margin: 15px 0;
+	}
+
+	.touch {
+		pointer-events: none;
+   		cursor: default;
 	}
 }
