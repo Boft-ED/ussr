@@ -1729,7 +1729,6 @@ footer .sub-footer ul li a {
 	}
 
 	.touch {
-		pointer-events: none;
-   		cursor: default;
+		display: none;
 	}
 }
