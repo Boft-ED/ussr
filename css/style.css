@@ -280,13 +280,15 @@ textarea {
 }
 
 /* SECTIONS */
-main {
+
+.main {
 	width: 100%;
 	float: left;
 	position: relative;
 	z-index: 3;
 	background: #fff;
 }
+
 section {
 	background: #fff;
 }
